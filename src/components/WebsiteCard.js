@@ -12,7 +12,6 @@ export function WebsiteCard({ link }) {
         type: "error",
         autoClose: 2000,
       });
-      window.location.href = window.location.href;
     }
   };
 
