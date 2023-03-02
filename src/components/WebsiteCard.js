@@ -32,7 +32,7 @@ export function WebsiteCard({ link }) {
 
 
           <button
-            className="btn btn-danger btn-sm d-flex align-items-center"
+            className="btn btn-danger btn-sm d-flex align-items-center d-none"
             onClick={(e) => {
               e.stopPropagation();
               onDeleteLink(link.id);
