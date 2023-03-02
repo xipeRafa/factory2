@@ -68,7 +68,7 @@ export const WebsiteForm = (props) => {
   }, [params.id]);
 
   return (
-    <div className="col-md-4 offset-md-4">
+    <div className="col-lg-6 offset-lg-3">
 
       <form onSubmit={handleSubmit} className="card card-body bg-primary">
       <br/>
