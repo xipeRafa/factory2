@@ -49,7 +49,7 @@ export const WebsiteForm = (props) => {
 
     // Clean Form
     setWebsite(initialState);
-    navigate("/");
+    navigate("/list");
   };
 
   const getLinkById = async (id) => {
