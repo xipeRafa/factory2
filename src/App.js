@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<WebsiteList />} />
           <Route path="add" element={<WebsiteForm />} />
           <Route path="edit/:id" element={<WebsiteForm />} />
-          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="*"  element={<WebsiteList />}/>
         </Route>
       </Routes>
     </BrowserRouter>
