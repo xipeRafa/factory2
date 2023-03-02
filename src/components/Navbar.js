@@ -26,7 +26,7 @@ export const Navbar = () => (
       <div id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link className=" btn btn-primary shadow-none" to="/add" >
+            <Link className=" btn btn-primary shadow-none" to="/factory2/add" >
               <AiOutlineSave className="me-1" size="1.5rem" />Crear proceso
             </Link>
           </li>

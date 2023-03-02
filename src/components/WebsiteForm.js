@@ -37,19 +37,19 @@ export const WebsiteForm = (props) => {
 
     if (!params.id) {
       await saveWebsite(website);
-      toast("New Link Added", {
+      toast("New Proyect Added", {
         type: "success",
       });
     } else {
       await updateWebsite(params.id, website);
-      toast("Updated", {
+      toast("proyect Updated", {
         type: "success",
       });
     }
 
     // Clean Form
     setWebsite(initialState);
-    navigate("/list");
+    navigate("/factory2/list");
   };
 
   const getLinkById = async (id) => {
@@ -87,7 +87,7 @@ export const WebsiteForm = (props) => {
           />
         </div>
         <br/>
-        <label htmlFor="name">DATO 2:</label>
+        <label htmlFor="name">DATO 2</label>
         <div className="input-group">
        {/*    <div className="input-group-text bg-dark">
             <i className="material-icons">create</i>
@@ -103,7 +103,7 @@ export const WebsiteForm = (props) => {
         </div>
         <br/>
 
-        <label htmlFor="description">Descripcion:</label>
+        <label htmlFor="description">Descripcion</label>
         <textarea
           rows="3"
           className="form-control mb-3"

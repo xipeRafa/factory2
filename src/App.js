@@ -10,8 +10,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route path="/factory2" element={<WebsiteList />} /> 
-          <Route path="add" element={<WebsiteForm />} />
-          <Route path="edit/:id" element={<WebsiteForm />} />
+          <Route path="factory2/add" element={<WebsiteForm />} />
+          <Route path="factory2/edit/:id" element={<WebsiteForm />} />
           <Route path="*"  element={<Navigate to="/factory2" />}/>
         </Route>
       </Routes>

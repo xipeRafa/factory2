@@ -12,8 +12,8 @@ export function WebsiteCard({ link }) {
         type: "error",
         autoClose: 2000,
       });
-      navigate('/add')
-      navigate('/list')
+      navigate('/factory2/add')
+      navigate('/factory2/list')
     }
   };
 
@@ -21,7 +21,7 @@ export function WebsiteCard({ link }) {
     <div
       className="card mb-3 card-website"
       key={link.id}
-      onClick={() => navigate(`/edit/${link.id}`)}
+      onClick={() => navigate(`/factory2/edit/${link.id}`)}
     >
       <div className="card-body">
         <div className="d-flex justify-content-between">
