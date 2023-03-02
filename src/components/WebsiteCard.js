@@ -12,6 +12,8 @@ export function WebsiteCard({ link }) {
         type: "error",
         autoClose: 2000,
       });
+      navigate('/add')
+      navigate('/list')
     }
   };
 
@@ -25,35 +27,29 @@ export function WebsiteCard({ link }) {
         <div className="d-flex justify-content-between">
 
 
-          <h4>
-               {link.url}</h4> 
-            <br/>
-            <br/>
+        <h4>{link.url}</h4>
+        <br />
+        <br />
 
 
-          <button
-            className="btn btn-danger btn-sm d-flex align-items-center d-none"
-            onClick={(e) => {
-              e.stopPropagation();
-              onDeleteLink(link.id);
-            }}
-          >
+        <button className="btn btn-danger btn-sm d-flex align-items-center" onClick={(e) => {e.stopPropagation(); onDeleteLink(link.id)}}>
             <i className="material-icons">close</i>
-          </button>
-
+        </button>
 
         </div>
-        <p>Dato 2: 
-        <br/>
-          {link.name}</p>
-        <p href={link.url} target="_blank" rel="noopener noreferrer">
 
-
-
-
-        Descripcion: <br/>
-        {link.description} 
+        <p>
+          Dato 2:
+          <br />
+          {link.name}
         </p>
+
+        <p> 
+          Descripcion: 
+          <br />
+          {link.description}
+        </p>
+
       </div>
     </div>
   );
