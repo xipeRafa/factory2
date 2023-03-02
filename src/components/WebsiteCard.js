@@ -26,7 +26,7 @@ export function WebsiteCard({ link }) {
 
 
           <h4>
-            {link.name}</h4>
+               {link.url}</h4> 
             <br/>
             <br/>
 
@@ -45,10 +45,14 @@ export function WebsiteCard({ link }) {
         </div>
         <p>Dato 2: 
         <br/>
-          {link.description}</p>
+          {link.name}</p>
         <p href={link.url} target="_blank" rel="noopener noreferrer">
+
+
+
+
         Descripcion: <br/>
-        {link.url}
+        {link.description} 
         </p>
       </div>
     </div>
