@@ -9,10 +9,10 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Layout />}>
-          <Route path="/list" element={<WebsiteList />} /> 
+          <Route path="/factory2" element={<WebsiteList />} /> 
           <Route path="add" element={<WebsiteForm />} />
           <Route path="edit/:id" element={<WebsiteForm />} />
-          <Route path="*"  element={<Navigate to="/add" />}/>
+          <Route path="*"  element={<Navigate to="/factory2" />}/>
         </Route>
       </Routes>
     </BrowserRouter>
