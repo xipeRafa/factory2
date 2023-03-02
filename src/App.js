@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-           <Route path="/" element={<WebsiteList />} /> 
+          <Route path="/" element={<Layout />}>
+          <Route path="/list" element={<WebsiteList />} /> 
           <Route path="add" element={<WebsiteForm />} />
           <Route path="edit/:id" element={<WebsiteForm />} />
           <Route path="*"  element={<WebsiteList />}/>

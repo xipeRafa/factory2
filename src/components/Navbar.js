@@ -4,11 +4,13 @@ import { SiFirebase } from "react-icons/si";
 
 export const Navbar = () => (
   <nav className="navbar navbar-expand-lg ">
+
     <div className="container">
-      <Link className="navbar-brand d-flex" to="/">
+      <Link className="navbar-brand" to="/list">
         <SiFirebase size="1.5rem" className="me-2" />
         Proyectos
       </Link>
+
       <button
         className="navbar-toggler"
         type="button"
@@ -20,19 +22,20 @@ export const Navbar = () => (
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+
+      <div id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link
-              className="d-flex align-items-center btn btn-primary shadow-none"
-              to="/add"
-            >
-              <AiOutlineSave className="me-1" size="1.5rem" />
-              Crear proceso
+            <Link className=" btn btn-primary shadow-none" to="/add" >
+              <AiOutlineSave className="me-1" size="1.5rem" />Crear proceso
             </Link>
           </li>
         </ul>
       </div>
+
+
+
+
     </div>
   </nav>
 );
